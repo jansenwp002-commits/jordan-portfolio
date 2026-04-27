@@ -68,6 +68,7 @@ export default {
           tags: ['n8n', 'WhatsApp API', 'Automation', 'Workflow'],
           gradient: 'linear-gradient(135deg, #1d4350, #a43931)'
         },
+        
       ]
     }
   }
