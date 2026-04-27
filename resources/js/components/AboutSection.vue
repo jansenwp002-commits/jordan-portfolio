@@ -19,7 +19,7 @@
             <div class="detail-item"><span class="detail-label">Degree</span><span>BSc Computer Science</span></div>
             <div class="detail-item"><span class="detail-label">Languages</span><span>English, Afrikaans</span></div>
           </div>
-          <a href="#" class="btn-primary" style="display:inline-block;margin-top:1.5rem;">Download CV</a>
+          <a href="\Jordan_Jansen_Updated_CV (2).pdf" class="btn-primary" style="display:inline-block;margin-top:1.5rem;">Download CV</a>
         </div>
       </div>
     </div>
