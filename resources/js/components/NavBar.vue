@@ -1,12 +1,10 @@
 <template>
   <nav :class="['navbar', { scrolled: isScrolled }]">
     <div class="nav-logo">JJ</div>
+
     <ul class="nav-links">
       <li v-for="link in links" :key="link.id">
-        <a
-          :class="{ active: activeSection === link.id }"
-          @click.prevent="$emit('navigate', link.id)"
-          href="#">
+        <a :class="{ active: activeSection === link.id }" @click.prevent="$emit('navigate', link.id)" href="#">
           {{ link.label }}
         </a>
       </li>

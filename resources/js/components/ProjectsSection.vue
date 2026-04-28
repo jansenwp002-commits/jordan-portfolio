@@ -4,8 +4,9 @@
       <h2 class="section-title">Featured <span>Projects</span></h2>
       <div class="projects-grid">
         <div v-for="p in projects" :key="p.title" class="project-card">
-          <div class="project-img" :style="{ background: p.gradient }">
-            <span class="project-emoji">{{ p.emoji }}</span>
+          <div class="project-img">
+            <img v-if="p.image" :src="p.image" :alt="p.title" />
+            <span v-else class="project-emoji">{{ p.emoji }}</span>
           </div>
           <div class="project-body">
             <h3>{{ p.title }}</h3>
@@ -27,14 +28,14 @@ export default {
     return {
       projects: [
         {
-          emoji: '🚗',
+          image: '/images/aboudcar.png',
           title: 'Aboudcar – Vehicle Comparison Platform',
           desc: 'Full-stack vehicle comparison website built with Laravel backend and Vue.js frontend. Users can compare car specs, view pricing, and browse by category.',
           tags: ['Laravel', 'Vue.js', 'PHP', 'MySQL'],
           gradient: 'linear-gradient(135deg, #0f2027, #203a43, #2c5364)'
         },
         {
-          emoji: '🏢',
+          image: '/images/gaholding.png',
           title: 'GA Holding Website Revamp',
           desc: 'Full rebranding and revamp of the GA Holding corporate website, including UI/UX overhaul, brand migration from GA Group, and comprehensive testing.',
           tags: ['WordPress', 'Elementor Pro', 'CSS', 'JavaScript'],
@@ -68,7 +69,7 @@ export default {
           tags: ['n8n', 'WhatsApp API', 'Automation', 'Workflow'],
           gradient: 'linear-gradient(135deg, #1d4350, #a43931)'
         },
-        
+
       ]
     }
   }

@@ -17,10 +17,13 @@
         <button class="btn-outline" @click="$parent.scrollTo('experience')">View My Work</button>
       </div>
     </div>
-    <div class="hero-scroll" @click="$parent.scrollTo('about')">
+    <!-- <div class= "hero-image">
+      <img :src="' /images/hero.jpeg '" alt="Jordan Jansen">
+    </div> -->
+    <!-- <div class="hero-scroll" @click="$parent.scrollTo('about')">
       <span>scroll</span>
       <div class="scroll-line"></div>
-    </div>
+    </div> -->
   </section>
 </template>
 
